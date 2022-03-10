@@ -27,13 +27,19 @@
             const vat = 14;
 
             // Get user input and save to variable
-                // code here..
+            let productPrice = prompt("What is the price of your product?");
 
             // Perform calculation here
-            let result;// save result of calculation to answer variable.
+            let result = productPrice * (14/100);
 
             // log VAT out to consol, DOM, or alert
-            console.log("The VAT of entered amount is " + result);
+            console.log("The VAT of entered amount is " + Math.round(result));
+
+            // DOM
+            document.getElementById("app").innerHTML = "The VAT of entered amount is " + Math.round(result);
+
+            // Alert
+            alert("The VAT of entered amount is " + Math.round(result));
 
         </script>
         <!-- End of Script -->
